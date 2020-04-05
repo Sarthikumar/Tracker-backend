@@ -361,7 +361,7 @@ let validateEmail=(req,res)=>{
 			 else{
             const url="http://localhost:4200/reset-password/"
               var email1={
-                        from: 'Localhost staff, itsks97@gmail.com',
+                        from: 'Localhost staff, itsrs005@gmail.com',
                         to: user.email,
                         subject: 'Profile is created',
                         html:'Hello<strong> '+user.Name+'</strong>,<br><br>Thank you for registering at localhost.com.Please click on the link below to reset your password:<br><br>'+url+resettokenpass+'<br><br> Thanks <br><br> Localhost'
