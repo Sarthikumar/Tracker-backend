@@ -19,8 +19,8 @@ const UserModel = mongoose.model('User')
 var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'itsks97@gmail.com',
-      pass: 'Rishabh@1997'
+      user: 'itsrs005@gmail.com',
+      pass: 'Rishabh@2001'
     }
   });
 
@@ -84,7 +84,7 @@ let signUpFunction = (req, res) => {
                                 let newUserObj = newUser.toObject();
                                 const url="http://localhost:8000/activate/"
                                 var email={
-                                    from: 'Localhost staff, itsks97@gmail.com',
+                                    from: 'Localhost staff, itsrs005@gmail.com',
                                     to: newUserObj.email,
                                     subject: 'Profile is created',
                                     html:'Hello<strong>'+newUserObj.Name+'</strong>,<br><br>Thank you for registering at localhost.com.Please click on the link below to complete your activation:<br><br>'+url
