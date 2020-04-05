@@ -347,7 +347,7 @@ let validateEmail=(req,res)=>{
                 createdOn: time.now()
 
              })
-             UserModel.update({'email':user.email}, {'resettokenpass':resettokenpass}, { multi: false }).exec((err, userresetpass) => {
+             UserModel.updateOne({'email':user.email}, {'resettokenpass':resettokenpass}, { multi: false }).exec((err, userresetpass) => {
 			 
 			 if(err){
 			 logger.error('Reset token is not generated', 'UserController: validateEmail()', 7)
